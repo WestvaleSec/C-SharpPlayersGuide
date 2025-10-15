@@ -1,0 +1,15 @@
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\bin\Debug\net9.0\Challenge001HelloWorld.exe
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\bin\Debug\net9.0\Challenge001HelloWorld.deps.json
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\bin\Debug\net9.0\Challenge001HelloWorld.runtimeconfig.json
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\bin\Debug\net9.0\Challenge001HelloWorld.dll
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\bin\Debug\net9.0\Challenge001HelloWorld.pdb
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\obj\Debug\net9.0\Challenge001HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\obj\Debug\net9.0\Challenge001HelloWorld.AssemblyInfoInputs.cache
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\obj\Debug\net9.0\Challenge001HelloWorld.AssemblyInfo.cs
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\obj\Debug\net9.0\Challenge001HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\obj\Debug\net9.0\Challenge001HelloWorld.sourcelink.json
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\obj\Debug\net9.0\Challenge001HelloWorld.dll
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\obj\Debug\net9.0\refint\Challenge001HelloWorld.dll
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\obj\Debug\net9.0\Challenge001HelloWorld.pdb
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\obj\Debug\net9.0\Challenge001HelloWorld.genruntimeconfig.cache
+C:\Users\Zane\source\repos\C-SharpPlayersGuide\Challenges\Part_01_TheBasics\Challenge_001_HelloWorld\obj\Debug\net9.0\ref\Challenge001HelloWorld.dll
