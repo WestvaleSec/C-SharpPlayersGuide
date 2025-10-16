@@ -16,21 +16,21 @@ This file tracks total XP earned from challenges and knowledge checks throughout
 ## 🧮 Current Totals
 | Metric | Value |
 |--------|-------|
-| **Total XP** | 425 |
+| **Total XP** | 575 |
 | **Current Level** | 2 |
-| **XP to Next Level** | 175 |
+| **XP to Next Level** | 25 |
 
-_You can adjust level thresholds however you’d like (ex: every 100 XP = +1 Level)._
+
 
 ---
 
-## 📊 XP Breakdown by Part
+## 📊 XP Breakdown by Part ("Challenges" includes Knowledge Checks here)
 | Part | Title | Challenges | XP Earned | Total XP Available |
 |------|--------|-------------|------------|--------|
-| 1 | The Basics | 8/27 | 425 | 2300 |
+| 1 | The Basics | 10/27 | 575 | 2300 |
 | 2 | Object-Oriented Programming | 0/33 | 0 | 3800 |
 | 3 | Advanced Features | 0/33 | 0 | 2825 |
 | 4 | The Endgame | 0/18 | 0 | ~3200 |
 | 5 | Bonus Levels | 0/3 | 0 | 75 |
-| **Total** | — | **8/114** | **425 XP** | **~12200** |
+| **Total** | — | **10/114** | **575 XP** | **~12200** |
 

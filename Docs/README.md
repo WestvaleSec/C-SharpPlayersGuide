@@ -28,7 +28,8 @@ This project is meant to solidify fundamentals, practice consistent version cont
 ## 🏆 Goals
 
 - Complete every challenge and knowledge check in the book.  
-- Write clean, readable code following C# best practices.  
+- Write clean, readable code following C# best practices. 
+- Use this repository as a way to learn and practice version control through Git and GitHub.
 - Maintain organized commits for each completed challenge.  
 - Track progress transparently using XP and level milestones.
 
