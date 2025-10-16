@@ -1,4 +1,33 @@
-﻿Console.WriteLine("Apparently these peasants don't know how to do basic reassignment of variables.\nCan you input valid changes for each variable type?");
+﻿/// <summary>
+/// Challenge 007 – The Variable Shop Returns
+/// --------------------------------
+/// Prompt:
+///     “Hey! Programmer!” It’s the shopkeeper from the Variable Shop who hobbles over to you.
+///     “Thanks to your help, variables are selling like RAM cakes! But these people just aren’t
+///     any good at programming. They keep asking how to modify the values of the variables
+///     they’re buying, and… well… frankly, I have no clue. But you’re a programmer, right?
+///     Maybe you could show me so I can show my customers?”
+///
+/// Objectives:
+/// • Modify your Variable Shop program to assign a new, different literal value to each of
+///   the 14 original variables. Do not declare any additional variables.
+/// • Use Console.WriteLine to display the updated contents of each variable.
+///
+/// XP: 50
+/// Page: 45
+///
+/// Notes:
+/// Expanded upon the previous Variable Shop program to allow reassigning all variables.
+/// Used Convert methods and user input to turn the task into an interactive type test,
+/// providing feedback for each successful reassignment.
+///
+/// Reflection:
+/// Reinforced understanding of variable reassignment and type conversion.
+/// Could improve by adding exception handling for invalid input.
+/// </summary>
+
+// Intro message
+Console.WriteLine("Apparently these peasants don't know how to do basic reassignment of variables.\nCan you input valid changes for each variable type?");
 
 // All Variable declarations with sample values
 byte numByte = 255;
@@ -75,6 +104,7 @@ Console.WriteLine($"String: {exampleString}");
 exampleString = Console.ReadLine();
 Console.WriteLine("Success!");
 
+// Exit message
 Console.WriteLine("Congratulations!\n\nYou've successfully reassigned all variable types without crashing the world!");
 
 // This program tests the user's ability to reassign various C# variable types correctly.

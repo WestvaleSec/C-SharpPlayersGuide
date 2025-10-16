@@ -1,5 +1,33 @@
-﻿Console.WriteLine("Welcome to the Variable Shop!\nIs there anything specific you're looking for today?");
-Console.WriteLine("We have a wide variety of items, from A to Z.\n\nJust let me know which variable you're interested in!");
+﻿/// <summary>
+/// Challenge 006 – The Variable Shop
+/// --------------------------------
+/// Prompt:
+///     You see an old shopkeeper struggling to stack up variables in a window display.
+///     “Hoo-wee! All these variable types sure are exciting but setting them all up to show
+///     them off to excited new programmers like yourself is a lot of work for these aching
+///     bones,” she says. “You wouldn’t mind helping me set up this program with one variable
+///     of every type, would you?”
+///
+/// Objectives:
+/// • Build a program with a variable of all fourteen types described in this level.
+/// • Assign each of them a value using a literal of the correct type.
+/// • Use Console.WriteLine to display the contents of each variable.
+///
+/// XP: 100
+/// Page: 45
+///
+/// Notes:
+/// Created a program that declares and assigns one variable of each C# primitive type.
+/// Displayed each variable’s value using Console.WriteLine to confirm correct assignment.
+///
+/// Reflection:
+/// Practiced declaring, assigning, and printing all built-in C# types.
+/// This challenge reinforced data-type fundamentals and literal syntax.
+/// </summary>
+
+// Intro message
+Console.WriteLine("Welcome to the Variable Shop!\nIs there anything specific you're looking for today?");
+Console.WriteLine("We have a wide variety of items, from A to Z.\n\nJust let me know which variable you're interested in!\n");
 
 // All Variable declarations with example values
 byte numByte = 255;
@@ -17,6 +45,7 @@ char letterChar = 'Z';
 bool isAvailable = true;
 string exampleString = "Hello, World!";
 
+// Displaying all variable values to the user
 Console.WriteLine("\nHere are some examples of our variables (and their max values):");
 Console.WriteLine($"Byte: {numByte}");
 Console.WriteLine($"SByte: {numSByte}");
