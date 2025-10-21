@@ -28,16 +28,21 @@
 /// made sure the user input a number.
 /// </summary>
 
-
+// Aesthetic configurations
 Console.Title = "Clocktower";
 Console.ForegroundColor = ConsoleColor.Yellow;
-
 Console.WriteLine("=== Repairing the Clocktower ===");
+
+// Prompts user for a number
 Console.Write("\nEnter a number: ");
 
+// Checks if user input was a number and if so, gives number to the double "numberGiven"
 if (double.TryParse(Console.ReadLine(), out double numberGiven))
 {
+	// Checks if the number given is even
 	bool isEven = numberGiven % 2 == 0;
+
+	// Outputs "Tick" for an even number, and "Tock" for an odd number
 	if (isEven)
 	{
 		Console.WriteLine("\nTick\n");
@@ -47,7 +52,7 @@ if (double.TryParse(Console.ReadLine(), out double numberGiven))
 		Console.WriteLine("\nTock\n");
 	}
 }
-else
+else // Handles misinputs
 {
 	Console.WriteLine("\nPlease. Just give a whole number next time, bozo...\n");
 }
