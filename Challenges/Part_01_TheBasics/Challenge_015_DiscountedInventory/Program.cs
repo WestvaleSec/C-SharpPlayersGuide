@@ -25,6 +25,7 @@
 /// applications.
 /// Added more dynamic player interaction to simulate personalized shop behavior.
 /// </summary>
+
 // Aesthetic Configurations
 Console.Title = "Ye Olde Shoppe";
 Console.ForegroundColor = ConsoleColor.Yellow;
