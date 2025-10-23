@@ -150,7 +150,7 @@ A: True. *reference* types explicityly means they *point* to the contents inside
 
 Q: **True/False**. The garbage collector cleans up old, unused space on the heap and stack.
 
-A: True. This means we don't need to manually release memory like in C++.
+A: False. Rereading the question, it says also says "and *stack*," which would be incorrect. The stack can handle it's memory itself.
 
 
 
