@@ -116,53 +116,53 @@ A: boolean (bool)
 
 
 
-\[] Check 4 – Memory
+\[✓] Check 4 – Memory
 
-Q:
+Q: **True/False**. You can access anything on the stack at any time.
 
-A:
-
-
-
-Q:
-
-A:
+A: False, you can only access the top layer of the stack.
 
 
 
-Q:
+Q: **True/False**. The stack keeps track of local variables.
 
-A:
-
-
-
-Q:
-
-A:
+A: True.
 
 
 
-Q:
+Q: **True/False**. The contents of a value type can be placed on the heap.
 
-A:
-
-
-
-Q:
-
-A:
+A: True.
 
 
 
-Q:
+Q: **True/False**. The contents of a value type are *always* placed on the heap.
 
-A:
+A: False. *Usually*, the contents of a value type are put directly in the stack.
 
 
 
-Q:
+Q: **True/False**. The contents of reference types are *always* placed on the heap.
 
-A:
+A: True. *reference* types explicityly means they *point* to the contents inside, on the heap.
+
+
+
+Q: **True/False**. The garbage collector cleans up old, unused space on the heap and stack.
+
+A: True. This means we don't need to manually release memory like in C++.
+
+
+
+Q: **True/False**. If **a** and **b** are array variables referencing the same object, modifying **a** affects **b** as well.
+
+A: True. If they have the same reference, then they are both pointing to the same object.
+
+
+
+Q: **True/False**. If **a** and **b** are **ints** with the same value, changing **a** will also affect **b**.
+
+A: False. *ints* are a value type, meaning they are *almost always* copied directly onto the stack.
 
 
 

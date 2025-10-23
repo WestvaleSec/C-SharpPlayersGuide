@@ -15,7 +15,7 @@
 /// Page: 107  
 ///  
 /// Notes:  
-/// Implemented a simple recursive method `CountDown(int number)` that prints each number  
+/// Implemented a simple recursive method `countdownFrom(int number)` that prints each number  
 /// and calls itself with a decremented value until reaching 1. Added clear output formatting  
 /// and visual separation for readability.  
 ///  
