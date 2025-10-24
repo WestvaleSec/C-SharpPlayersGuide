@@ -1,6 +1,6 @@
 # C# Player’s Guide Progress – WestvaleSec
 
-This repository documents my progress as I work through **_The C# Player’s Guide_**.  
+This repository documents my progress as I work through **_The C# Player’s Guide_** by R.B. Whitaker.  
 Each challenge, knowledge check, and exercise is completed, organized, and tracked for XP and progression.  
 This project is meant to solidify fundamentals, practice consistent version control, and serve as a portfolio of learning.
 

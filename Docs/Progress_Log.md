@@ -5,33 +5,33 @@ A chronological record of all completed challenges and knowledge checks.
 ---
 
 ## Part 1 – The Basics
-- [✓] Knowledge Check – C# (25 XP)
-- [✓] Install Visual Studio (75 XP)
-- [✓] Hello, World! (50 XP)
-- [✓] What Comes Next (50 XP)
-- [✓] The Makings of a Programmer (50 XP)
-- [✓] Consolas and Telim (50 XP)
-- [✓] The Thing Namer 3000 (100 XP)
-- [✓] Knowledge Check – Variables (25 XP)
-- [✓] The Variable Shop (100 XP)
-- [✓] The Variable Shop Returns (50 XP)
-- [ ] Knowledge Check – Type System (25 XP)
-- [ ] The Triangle Farmer (100 XP)
-- [ ] The Four Sisters and the Duckbear (100 XP)
-- [ ] The Dominion of Kings (100 XP)
-- [ ] The Defense of Consolas (200 XP)
-- [ ] Repairing the Clocktower (100 XP)
-- [ ] Watchtower (100 XP)
-- [ ] Buying Inventory (100 XP)
-- [ ] Discounted Inventory (50 XP)
-- [ ] The Prototype (100 XP)
-- [ ] The Magic Cannon (100 XP)
-- [ ] The Replicator of D’To (100 XP)
-- [ ] The Laws of Freach (50 XP)
-- [ ] Taking a Number (100 XP)
-- [ ] Countdown (100 XP)
-- [ ] Knowledge Check – Memory (25 XP)
-- [ ] Hunting the Manticore (250 XP)
+- [✓] ~~Knowledge Check – C# (25 XP)~~
+- [✓] ~~Install Visual Studio (75 XP)~~
+- [✓] ~~Hello, World! (50 XP)~~
+- [✓] ~~What Comes Next (50 XP)~~
+- [✓] ~~The Makings of a Programmer (50 XP)~~
+- [✓] ~~Consolas and Telim (50 XP)~~
+- [✓] ~~The Thing Namer 3000 (100 XP)~~
+- [✓] ~~Knowledge Check – Variables (25 XP)~~
+- [✓] ~~The Variable Shop (100 XP)~~
+- [✓] ~~The Variable Shop Returns (50 XP)~~
+- [✓] ~~Knowledge Check – Type System (25 XP)~~
+- [✓] ~~The Triangle Farmer (100 XP)~~
+- [✓] ~~The Four Sisters and the Duckbear (100 XP)~~
+- [✓] ~~The Dominion of Kings (100 XP)~~
+- [✓] ~~The Defense of Consolas (200 XP)~~
+- [✓] ~~Repairing the Clocktower (100 XP)~~
+- [✓] ~~Watchtower (100 XP)~~
+- [✓] ~~Buying Inventory (100 XP)~~
+- [✓] ~~Discounted Inventory (50 XP)~~
+- [✓] ~~The Prototype (100 XP)~~
+- [✓] ~~The Magic Cannon (100 XP)~~
+- [✓] ~~The Replicator of D’To (100 XP)~~
+- [✓] ~~The Laws of Freach (50 XP)~~
+- [✓] ~~Taking a Number (100 XP)~~
+- [✓] ~~Countdown (100 XP)~~
+- [✓] ~~Knowledge Check – Memory (25 XP)~~
+- [✓] ~~Hunting the Manticore (250 XP)~~
 
 ---
 
@@ -142,6 +142,6 @@ A chronological record of all completed challenges and knowledge checks.
 ## 🧭 Overall Status
 | Category | Completed | Total | Percentage |
 |-----------|------------|--------|-------------|
-| Challenges | 10 | 105 | 10% |
-| Knowledge Checks | 2 | 19 | 11% |
-| Total XP | 575 | 12200 | 5% |
+| Challenges | 23 | 95 | 24% |
+| Knowledge Checks | 4 | 19 | 21% |
+| Total XP | 2275 | 11800 | 19% |
