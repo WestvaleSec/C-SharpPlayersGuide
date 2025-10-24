@@ -1,5 +1,5 @@
 ﻿/// <summary>
-/// Challenge 019 – Vin’s Trouble  
+/// Challenge 026 – Vin’s Trouble  
 /// --------------------------------
 /// Prompt:  
 ///     “Master Programmer!” Vin Fletcher shouts as he races to catch up to you.  

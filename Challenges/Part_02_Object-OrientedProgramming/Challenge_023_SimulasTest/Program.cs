@@ -2,7 +2,7 @@
 
 
 /// <summary>
-/// Challenge 025 – Simula’s Test
+/// Challenge 023 – Simula’s Test
 /// --------------------------------
 /// Prompt:
 ///     As you move through the village of Enumerant, you notice a short, cloaked figure following you.

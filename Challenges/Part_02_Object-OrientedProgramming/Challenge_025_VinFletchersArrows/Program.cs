@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices.Marshalling;
 
 /// <summary>
-/// Challenge 018 – Vin Fletcher’s Arrows  
+/// Challenge 025 – Vin Fletcher’s Arrows  
 /// --------------------------------
 /// Prompt:  
 ///     Vin Fletcher is a skilled arrow maker. He asks for your help building a new class to represent  

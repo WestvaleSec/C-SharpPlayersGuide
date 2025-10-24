@@ -1,5 +1,5 @@
 ﻿/// <summary>
-/// Challenge 015 – Simula’s Soup
+/// Challenge 024 – Simula’s Soup
 /// --------------------------------
 /// Prompt:
 ///     Simula is impressed with how you reconstructed the box with an enumeration. When the box opened,
