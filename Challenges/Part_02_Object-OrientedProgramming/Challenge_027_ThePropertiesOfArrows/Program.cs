@@ -1,43 +1,40 @@
 ﻿/// <summary>
-/// Challenge 019 – Vin’s Trouble  
-/// --------------------------------
+/// Challenge 020 – The Properties of Arrows  
+/// ------------------------------------------
+/// Page: 168  
+/// XP: 100  
+///
 /// Prompt:  
-///     “Master Programmer!” Vin Fletcher shouts as he races to catch up to you.  
-///     “I have a problem. I created an arrow for a young man who took it and changed its  
-///     length to be half as long as I had designed. It no longer fit in his bow correctly  
-///     and misfired. It sliced his hand pretty bad. He’ll survive, but is there any way  
-///     we can make sure somebody doesn’t change an arrow’s length when they walk away  
-///     from my shop? I don’t want to be the cause of such self-inflicted pain.”  
+/// Vin Fletcher has one last request. His rival, Flynn Vetcher, sells unsafe and overpriced arrows,  
+/// but customers like his design because it’s “easier to use.” Vin doesn’t want to sacrifice safety,  
+/// but he remembers your mention of *properties* and asks for your help making his own class  
+/// cleaner and more intuitive.  
 ///
 /// Objectives:  
-/// • Modify your `Arrow` class to have **private** instead of public fields.  
-/// • Add **getter methods** (or properties) for each of the fields so they can still  
-///   be safely accessed without being directly modified.  
+/// • Modify the existing `Arrow` class to replace getter and setter methods with **C# properties**.  
+/// • Keep all encapsulation (no public fields).  
+/// • Ensure the program still works as before — users can create and inspect arrows easily without  
+///   sacrificing safety.  
 ///
-/// XP: 50  
-/// Page: 162  
-///
-/// Notes:  
-/// Updated the `Arrow` class to properly encapsulate its data, hiding the internal  
-/// fields for arrowhead, fletching, and length. Added public getter methods to allow  
-/// controlled read access while preventing external modification.  
-/// Reinforced understanding of encapsulation, access modifiers, and information hiding  
-/// as key principles of object-oriented programming.  
+/// Key Learning Points:  
+/// • Properties are a clean and safe way to expose class data in C# without giving up control.  
+/// • You can use auto-properties (for simple fields) or backing fields with logic (for validation).  
+/// • Properties provide the ease of field access (`arrow.Length`) while still protecting internal data.  
 ///
 /// Reflection:  
-/// Practiced transforming a basic data container class into a safer, more robust  
-/// structure through encapsulation. Learned how private fields protect internal state  
-/// while getter methods provide a clean and safe interface for other parts of the program.  
-/// This challenge emphasized defensive programming and class design hygiene.  
+/// This challenge teaches the modern way to handle encapsulation — by using properties to provide  
+/// controlled access to internal data. Instead of explicitly writing `GetLength()` and `SetLength()`,  
+/// you expose the data safely using `public int Length { get; private set; }`, combining the clarity  
+/// of direct access with the safety of private control.  
 /// </summary>
 
 
-Console.Title = "Vin's Trouble";
+Console.Title = "The Properties of Arrows";
 Console.ForegroundColor = ConsoleColor.White;
-Console.WriteLine("\n\t==== Vin's Trouble ====\n");
+Console.WriteLine("\n\t==== The Properties of Arrows ====\n");
 
 // --- Arrow Attributes Tuple Initialization ---
-(Arrow.ArrowheadType arrowheadType, Arrow.FletchingType fletchingType, int shaftLength) arrowChoice = (Arrow.ArrowheadType.Unknown, Arrow.FletchingType.Unknown, 60);
+(Arrow.ArrowheadType arrowheadType, Arrow.ArrowFletchingType fletchingType, int shaftLength) arrowChoice = (Arrow.ArrowheadType.Unknown, Arrow.ArrowFletchingType.Unknown, 60);
 
 // --- Input: Arrowhead type ---
 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -79,15 +76,15 @@ while (!isFletchingChoiceMade)
 	switch (arrowFletchingChoice)
 	{
 		case "plastic":
-			arrowChoice.fletchingType = Arrow.FletchingType.Plastic;
+			arrowChoice.fletchingType = Arrow.ArrowFletchingType.Plastic;
 			isFletchingChoiceMade = true;
 			break;
 		case "turkey feathers":
-			arrowChoice.fletchingType = Arrow.FletchingType.TurkeyFeathers;
+			arrowChoice.fletchingType = Arrow.ArrowFletchingType.TurkeyFeathers;
 			isFletchingChoiceMade = true;
 			break;
 		case "goose feathers":
-			arrowChoice.fletchingType = Arrow.FletchingType.GooseFeathers;
+			arrowChoice.fletchingType = Arrow.ArrowFletchingType.GooseFeathers;
 			isFletchingChoiceMade = true;
 			break;
 		default:
@@ -103,7 +100,7 @@ arrowChoice.shaftLength = AskForNumberInRange("How long would you like the arrow
 // --- Create Arrow object and display total cost ---
 Arrow theArrow = new Arrow(arrowChoice.arrowheadType, arrowChoice.fletchingType, arrowChoice.shaftLength);
 Console.ForegroundColor = ConsoleColor.Yellow;
-Console.WriteLine($"The cost of the arrow will be {theArrow.GetCost()} gold.");
+Console.WriteLine($"The cost of the arrow will be {theArrow.GetCost(): 0.00} gold.");
 
 Console.ResetColor();
 
@@ -144,45 +141,40 @@ int AskForNumberInRange(string text, int min, int max)
 // Represents a single arrow with cost calculation logic.
 internal class Arrow
 {
-	private ArrowheadType _headType;
-	private FletchingType _fletchingType;
-	private int _shaftLength;
-	private float _pricePerCentimeter = 0.05f;
+	public  ArrowheadType HeadType { get; init; } = ArrowheadType.Unknown;
+	public ArrowFletchingType FletchingType { get; init; } = ArrowFletchingType.Unknown;
+	public int ShaftLength { get; init; } = 60;
+	public float PricePerCentimeter { get; } = 0.05f;
 
-	public Arrow() : this(ArrowheadType.Unknown, FletchingType.Unknown, 60)
+
+
+	public Arrow() : this(ArrowheadType.Unknown, ArrowFletchingType.Unknown, 60)
 	{
 	}
 
-	public Arrow(ArrowheadType headType, FletchingType fletchingType, int shaftLength)
+	public Arrow(ArrowheadType headType, ArrowFletchingType fletchingType, int shaftLength)
 	{
-		_headType = headType;
-		_fletchingType = fletchingType;
-		_shaftLength = shaftLength;
+		HeadType = headType;
+		FletchingType = fletchingType;
+		ShaftLength = shaftLength;
 	}
-	public ArrowheadType GetArrowheadType() => _headType;
-
-	public FletchingType GetFletchingType() => _fletchingType;
-
-	public int GetShaftLength() => _shaftLength;
-
-	public void SetPricePerCentimeter(float newPrice) => _pricePerCentimeter = newPrice;
 
 	public float GetCost()
 	{
 		float arrowCost = 0;
-		arrowCost += GetHeadTypeCost(_headType);
-		arrowCost += GetFletchingTypeCost(_fletchingType);
+		arrowCost += GetHeadTypeCost();
+		arrowCost += GetFletchingTypeCost();
 		arrowCost += GetShaftLengthCost();
 		return arrowCost;
 	}
 
-	private float GetHeadTypeCost(ArrowheadType headType)
+	private float GetHeadTypeCost()
 	{
 		float steelCost = 10;
 		float woodCost = 3;
 		float obsidianCost = 5;
 
-		switch (headType)
+		switch (HeadType)
 		{
 			case ArrowheadType.Steel:
 				return steelCost;
@@ -195,30 +187,30 @@ internal class Arrow
 		}
 	}
 
-	private float GetFletchingTypeCost(FletchingType fletchingType)
+	private float GetFletchingTypeCost()
 	{
 		float plasticCost = 10;
 		float turkeyFeathersCost = 5;
 		float gooseFeathersCost = 3;
 
-		switch (fletchingType)
+		switch (FletchingType)
 		{
-			case FletchingType.Plastic:
+			case ArrowFletchingType.Plastic:
 				return plasticCost;
-			case FletchingType.TurkeyFeathers:
+			case ArrowFletchingType.TurkeyFeathers:
 				return turkeyFeathersCost;
-			case FletchingType.GooseFeathers:
+			case ArrowFletchingType.GooseFeathers:
 				return gooseFeathersCost;
 			default:
 				return 0;
 		}
 	}
 
-	private float GetShaftLengthCost() => _shaftLength * _pricePerCentimeter;
+	private float GetShaftLengthCost() => ShaftLength * PricePerCentimeter;
 
 
 
 
 	public enum ArrowheadType { Unknown, Steel, Wood, Obsidian }
-	public enum FletchingType { Unknown, Plastic, TurkeyFeathers, GooseFeathers }
+	public enum ArrowFletchingType { Unknown, Plastic, TurkeyFeathers, GooseFeathers }
 }
