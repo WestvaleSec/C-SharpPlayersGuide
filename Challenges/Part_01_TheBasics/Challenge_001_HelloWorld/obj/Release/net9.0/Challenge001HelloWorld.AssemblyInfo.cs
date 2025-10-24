@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Challenge001HelloWorld")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af86e6f7d1e876d6428570d1636d607619953fdf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+492131e39e88a2d2d915310dbfbdda1a659a3be1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Challenge001HelloWorld")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Challenge001HelloWorld")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
